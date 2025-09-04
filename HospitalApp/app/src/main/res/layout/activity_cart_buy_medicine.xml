@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CartBuyMedicineActivity">
+
+    <Button
+        android:id="@+id/buttonCBMBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="92dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCBMCheckout"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCBMCheckout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonCBMCheckout" />
+
+    <ListView
+        android:id="@+id/listViewCBM"
+        android:layout_width="389dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCBMTotalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCBMPackageName" />
+
+    <TextView
+        android:id="@+id/textView_logo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="13dp"
+        android:text="24*7 Health Haven"
+        android:textColor="#B769C5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_logo8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_logo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="23dp"
+        android:text="Deliver Location : Bangalore"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCBMPackageName"
+        app:layout_constraintStart_toStartOf="@+id/textView_logo7"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo7" />
+
+    <TextView
+        android:id="@+id/textViewCBMPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="Medicine Cart Items"
+        android:textColor="#EDE281"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCBM"
+        app:layout_constraintStart_toStartOf="@+id/textView_logo8"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo8" />
+
+    <TextView
+        android:id="@+id/textViewCBMTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Total Cost : 1234/-"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCBM" />
+
+    <Button
+        android:id="@+id/buttonCBMCheckout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="44dp"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCBMBack"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCBMDate" />
+
+    <Button
+        android:id="@+id/buttonCBMDate"
+        style="?android:spinnerStyle"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="21dp"
+        android:text="01/01/2024"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCBMCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Select Delivery Date"
+        android:textColor="#EFE26E"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCBMDate"
+        app:layout_constraintStart_toStartOf="@+id/textViewCBMTotalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCBMTotalPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
